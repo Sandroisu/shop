@@ -1,0 +1,138 @@
+.text {
+  font-family: 'Lato', serif;
+  font-style: normal;
+  transition: all .5s;
+
+  &__b_margin{
+    margin-bottom: 16px;
+  }
+
+  &__t_margin{
+    margin-top: 16px;
+  }
+
+  &__black {
+    color: $colorBlack;
+  }
+
+  &__white {
+    color: $whiteColor;
+  }
+
+  &__pink {
+    color: $pinkColor;
+  }
+
+  &__gray {
+    color: $colorGray;
+  }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
+
+  &__capitalize {
+    text-transform: capitalize;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+
+  &__cart_text_top{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__cart_text_bottom{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__cart_text__button{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    width: fit-content;
+  }
+
+  &__size_30 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__size_24 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__size_22 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  &__size_18 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__size_16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__size_14 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__size_12 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.link_text {
+  text-decoration: none;
+
+  &:hover {
+    color: $pinkColor;
+  }
+}
+
+.font {
+  font-family: 'Lato', serif;
+  font-style: normal;
+}
+
+.toast_box {
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  bottom: 30px;
+
+  &__hidden {
+    visibility: hidden;
+  }
+
+  &__show {
+    visibility: visible;
+  }
+}

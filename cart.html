@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type='text/css'
+          data-noprefix>
+    <script src="actions.js" defer></script>
+    <title>Products</title>
+</head>
+
+<body>
+<header class="full_width full_width__black_background">
+    <nav class="case case__row case__top_menu">
+        <div class="navigation_icons_container">
+            <a href="index.html"><img src="./img/top_logo.svg" alt="top logo"></a>
+            <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
+        </div>
+        <div class="navigation_icons_container">
+            <div onmouseover="showMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
+            <a href="registration.html"><img src="./img/person.svg" alt="person"></a>
+            <div class="basket">
+                <div class="basket_badge">3</div>
+                <a href="cart.html"><img src="./img/basket.svg" alt="basket"></a>
+                <div class="basket_pointer"></div>
+                <div class="basket_menu">
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_first.png" alt="first"></a>
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_second.png" alt="second"></a>
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_third.png" alt="third"></a>
+                    <div class="basket_total">
+                        <span class="text text__black text__size_14 text__capitalaize">Total:</span>
+                        <span class="text text__pink text__size_16">300 $</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="full_width full_width__relative">
+    <div class="new_arrivals_main_container">
+        <div class="case case__padding_64">
+            <span class="text text__pink text__uppercase text__size_24">shopping cart</span>
+        </div>
+    </div>
+
+    <div class="case case__cart case__padding_64 case__gap">
+        <div class="cart_container">
+            <div class="cart_item">
+                <img src="./img/featured_top_right.png" class="cart_image" alt="top left card">
+                <div class="cart_text">
+                    <div class="cart_text_header">
+                        <span class="text text__black text__uppercase text__cart_text_top">mango people t-shirt</span>
+                        <a href="#"><img src="./img/close.svg" alt="close"></a>
+                    </div>
+                    <form class="cart_text_form">
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            price:
+                            <span class="text text__pink text__cart_text_bottom">300$</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            color:
+                            <span class="text text__black text__cart_text_bottom">Red</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            size:
+                            <span class="text text__black text__cart_text_bottom">XL</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            quantity:
+                            <input class="text text__cart_text_bottom" type="number" value="1" min="1" max="99">
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="cart_item">
+                <img src="./img/top_middle_black.png" class="cart_image" alt="top left card">
+                <div class="cart_text">
+                    <div class="cart_text_header">
+                        <span class="text text__black text__uppercase text__cart_text_top">mango people t-shirt</span>
+                        <img src="./img/close.svg" alt="close">
+                    </div>
+                    <form class="cart_text_form">
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            price:
+                            <span class="text text__pink text__cart_text_bottom">300$</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            color:
+                            <span class="text text__black text__cart_text_bottom">Red</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            size:
+                            <span class="text text__black text__cart_text_bottom">XL</span>
+                        </label>
+                        <label class="text text__black text__capitalize text__cart_text_bottom">
+                            quantity:
+                            <input class="text text__cart_text_bottom" type="number" value="1" min="1" max="99">
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="full_width full_width__flex_space">
+                <button class="button button__gray_button text text__cart_text__button">clear shopping
+                    cart
+                </button>
+                <button class="button button__gray_button text text__cart_text__button">continue
+                    shopping
+                </button>
+            </div>
+        </div>
+        <div class="form_container">
+            <form class="cart_address">
+                <label class="text text__uppercase tex text__size_16 text__b_margin">shipping address</label>
+
+                <label>
+                    <input class="cart_input" type="text" placeholder="Moscow">
+                </label>
+                <label>
+                    <input class="cart_input" type="text" placeholder="State">
+                </label>
+                <label>
+                    <input class="cart_input" type="text" placeholder="Postcode/Zip">
+                </label>
+
+                <button class="button button__gray_button text text__cart_text__button">get a quote
+                </button>
+
+            </form>
+            <form class="cart_submit">
+                <div class="cart_total">
+                    <span class="text text__uppercase text__size_12">sub total</span>
+                    <span class="text text__uppercase text__size_12 cart_price">900$</span>
+                </div>
+                <div class="cart_total">
+                    <span class="text text__uppercase text__size_16">grand total</span>
+                    <span class="text text__uppercase text__pink text__size_16 cart_price">900$</span>
+                </div>
+                <div class="cart_blue_line"></div>
+                <button class="button button__pink_button text text__uppercase">PROCEED TO CHECKOUT
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="alt_top_content_menu" id="menu">
+        <div class="close_side_menu">
+            <img src="./img/close.svg" onclick="hideMenu()" alt="close">
+        </div>
+        <h2 class="top_content_menu_heading">
+            menu
+        </h2>
+        <ul class="top_content_menu_list">
+            <li class="top_content_menu_list_element">man
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                </ul>
+            </li>
+            <li class="top_content_menu_list_element">woman
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                </ul>
+            </li>
+            <li class="top_content_menu_list_element">kids
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<footer class="full_width full_width__black_background">
+    <div class="contacts_main_container">
+        <div class="contacts_container">
+            <figure class="contacts_support">
+                <img src="./img/support_girl.png" class="fluid_image" alt="Support">
+                <span class="contacts_support_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</span>
+            </figure>
+            <div class="contacts_subscribe">
+                <span class="contacts_subscribe_text_top">SUBSCRIBE</span>
+                <span class="contacts_subscribe_text_bottom">FOR OUR NEWLETTER AND PROMOTION</span>
+                <div class="contacts_subscribe_form">
+                    <label>
+                        <input class="contacts_subscribe_form_email" type="email" placeholder="Enter Your Email">
+                    </label>
+                    <button class="button button__pink_button button__rounded_button"
+                            type="submit">Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_rights_and_social">
+        <span class="footer_rights">&copy; 2021 Brand All Rights Reserved.</span>
+        <nav class="footer_social">
+            <a href="#" class="social_logo social_facebook"></a>
+            <a href="#" class="social_logo social_instagram"></a>
+            <a href="#" class="social_logo social_pinterest"></a>
+            <a href="#" class="social_logo social_twitter"></a>
+        </nav>
+    </div>
+</footer>
+<div id="toast" class="toast_box toast_box__hidden">toast</div>
+</body>
+
+
+</html>

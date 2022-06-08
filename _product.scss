@@ -1,0 +1,66 @@
+.tablet_hide {}
+
+.phone_hide {}
+
+.carousel_main_container {
+    width: 100%;
+    background: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel_left_button {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15) url("./img/left_arrow.svg") no-repeat center center;
+}
+
+.carousel_left_button:hover {
+    background-image: url("./img/left_arrow_hover.svg");
+}
+
+.carousel_right_button {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15) url("./img/right_arrow.svg") no-repeat center center;
+}
+
+.carousel_right_button:hover {
+    background-image: url("./img/right_arrow_hover.svg");
+}
+
+.carousel_image_container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    height: 700px;
+}
+
+.carousel_item {
+    display: none;
+    position: absolute;
+    transition: transform 400ms;
+}
+
+.active_carousel_item,
+.prev_carousel_item,
+.next_carousel_item {
+    display: block;
+}
+
+.prev_carousel_item,
+.next_carousel_item_translate {
+    transform: translateX(-100%);
+}
+
+.next_carousel_item,
+.prev_carousel_item_translate {
+    transform: translateX(100%);
+}
+
+.translate_finish {
+    transform: translateX(0);
+}

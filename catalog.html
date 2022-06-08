@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type='text/css' data-noprefix>
+    <script src="actions.js" defer></script>
+    <title>Products</title>
+</head>
+
+<body>
+<header class="full_width full_width__black_background">
+    <nav class="case case__row case__top_menu">
+        <div class="navigation_icons_container">
+            <a href="index.html"><img src="./img/top_logo.svg" alt="top logo"></a>
+            <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
+        </div>
+        <div class="navigation_icons_container">
+            <div onmouseover="showMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
+            <a href="registration.html"><img src="./img/person.svg" alt="person"></a>
+            <div class="basket">
+                <div class="basket_badge">3</div>
+                <a href="cart.html"><img src="./img/basket.svg" alt="basket"></a>
+                <div class="basket_pointer"></div>
+                <div class="basket_menu">
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_first.png" alt="first"></a>
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_second.png" alt="second"></a>
+                    <a class="basket_link" href="#"><img class="basket_image fluid_image"
+                                                         src="img/specials_third.png" alt="third"></a>
+                    <div class="basket_total">
+                        <span class="text text__black text__size_14 text__capitalaize">Total:</span>
+                        <span class="text text__pink text__size_16">300 $</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="full_width full_width__relative">
+    <div class="new_arrivals_main_container">
+        <div class="new_arrivals_container">
+            <a href="#" class="new_arrivals_name">new arrivals</a>
+            <div>
+                <a href="index.html" class="text text__black text__uppercase text__size_14 link_text">home/</a>
+                <a href="#" class="text text__black text__uppercase text__size_14 link_text">man/</a>
+                <span class="text text__pink text__uppercase text__size_14">new arrivals</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="case">
+        <div class="filter_sort_container">
+            <div class="filter_container">
+                <details class="filter">
+                    <summary class="text text__uppercase text__size_16 filter_summary">
+                        filter
+                    </summary>
+                    <details>
+                        <summary class="text text__uppercase text__size_18 link_text">
+                            category
+                        </summary>
+                        <ul class="top_content_submenu_list">
+                            <li><a class="top_content_submenu_list_element" href="#">Accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Bags</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Denim</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Jackets & Coats</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Polos</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shoes</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Sweaters & Knits</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">T-Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary class="text text__uppercase text__size_18 link_text">
+                            brand
+                        </summary>
+                        <ul class="top_content_submenu_list">
+                            <li><a class="top_content_submenu_list_element" href="#">Accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Bags</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Denim</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Jackets & Coats</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Polos</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shoes</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Sweaters & Knits</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">T-Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary class="text text__uppercase text__size_18 link_text">
+                            designer
+                        </summary>
+                        <ul class="top_content_submenu_list">
+                            <li><a class="top_content_submenu_list_element" href="#">Accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Bags</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Denim</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Jackets & Coats</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Polos</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Shoes</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Sweaters & Knits</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">T-Shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">Tanks</a></li>
+                        </ul>
+                    </details>
+                </details>
+            </div>
+            <div class="sort_container">
+                <label>
+                    <select class="text text__gray text__size_14 text__uppercase link_text drop_down">
+                        <option value="trending">trending now</option>
+                        <option value="red">popular</option>
+                        <option value="green">sale</option>
+                    </select>
+                </label>
+                <label>
+                    <select class="text text__gray text__size_14 text__uppercase link_text drop_down">
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </label>
+                <label>
+                    <select class="text text__gray text__size_14 text__uppercase link_text drop_down">
+                        <option value="99">below 100</option>
+                        <option value="100">100 - 200</option>
+                        <option value="200">200 - 400</option>
+                        <option value="400">400 - 800</option>
+                        <option value="800">800 - 1200</option>
+                    </select>
+                </label>
+            </div>
+            <div class="filter_container hidden_filter">filter</div>
+        </div>
+    </div>
+
+
+    <div class="alt_top_content_menu" id="menu">
+        <div class="close_side_menu">
+            <img src="./img/close.svg" onclick="hideMenu()" alt="close">
+        </div>
+        <h2 class="top_content_menu_heading">
+            menu
+        </h2>
+        <ul class="top_content_menu_list">
+            <li class="top_content_menu_list_element">man
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                </ul>
+            </li>
+            <li class="top_content_menu_list_element">woman
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                </ul>
+            </li>
+            <li class="top_content_menu_list_element">kids
+                <ul class="top_content_submenu_list">
+                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                    <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="case case__column case__padding_20">
+    <div class="featured_cards_row">
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/featured_top_left.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/top_middle_black.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+
+        <a href="product.html" class="featured_card_content tablet_hide">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/featured_top_right.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/featured_bottom_left.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/middle_middle.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/middle_right.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/bottom_left.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/bottom_middle.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+        <a href="product.html" class="featured_card_content">
+            <div class="featured_card_element">
+                <div class="featured_card_brightness">
+                    <div class="button button__invisible_button" onclick="toast(event, 'Item added')">
+                        Add to cart
+                    </div>
+                </div>
+                <img src="./img/bottom_right.png" class="featured_card_image" alt="top left card">
+            </div>
+            <div class="featured_content_text">
+                <span class="text text__black text__uppercase text__size_14 text__b_margin">ELLERY X M'O CAPSULE</span>
+                <span class="text text__black text__size_14 text__b_margin">Known for her sculptural takes on traditional
+                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                <span class="text text__pink text__size_16 text__b_margin">$52.00</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="full_width full_width__black_background full_width__margin_80">
+    <div class="case case__row case__delivery case__padding_100">
+        <div class="delivery_element">
+            <img src="./img/delivery.svg" class="fluid_image" alt="Free Delivery">
+            <span class="delivery_text_top">Free Delivery</span>
+            <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+            </article>
+        </div>
+        <div class="delivery_element">
+            <img src="./img/discount.svg" class="fluid_image" alt="Discounts">
+            <span class="delivery_text_top">Sales & discounts</span>
+            <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+            </article>
+        </div>
+        <div class="delivery_element">
+            <img src="./img/quality.svg" class="fluid_image" alt="Quality assurance">
+            <span class="delivery_text_top">Quality assurance</span>
+            <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+            </article>
+        </div>
+    </div>
+</section>
+
+<footer class="full_width full_width__black_background">
+    <div class="contacts_main_container">
+        <div class="contacts_container">
+            <figure class="contacts_support">
+                <img src="./img/support_girl.png" class="fluid_image" alt="Support">
+                <span class="contacts_support_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</span>
+            </figure>
+            <div class="contacts_subscribe">
+                <span class="contacts_subscribe_text_top">SUBSCRIBE</span>
+                <span class="contacts_subscribe_text_bottom">FOR OUR NEWLETTER AND PROMOTION</span>
+                <div class="contacts_subscribe_form">
+                    <label>
+                        <input class="contacts_subscribe_form_email" type="email" placeholder="Enter Your Email">
+                    </label>
+                    <button class="button button__pink_button button__rounded_button"
+                            type="submit">Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_rights_and_social">
+        <span class="footer_rights">&copy; 2021 Brand All Rights Reserved.</span>
+        <nav class="footer_social">
+            <a href="#" class="social_logo social_facebook"></a>
+            <a href="#" class="social_logo social_instagram"></a>
+            <a href="#" class="social_logo social_pinterest"></a>
+            <a href="#" class="social_logo social_twitter"></a>
+        </nav>
+    </div>
+</footer>
+<div id="toast" class="toast_box toast_box__hidden">toast</div>
+</body>
+
+
+</html>

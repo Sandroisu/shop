@@ -1,0 +1,50 @@
+$regFeatureLeftMargin: 20px;
+
+.reg_container {
+  display: flex;
+  flex-flow: row;
+  gap: 120px;
+  justify-content: space-between;
+}
+
+.reg_address{
+  display: flex;
+  flex-flow: column;
+}
+
+.reg_radio {
+  margin-right: 20px;
+}
+
+.reg_button {
+  width: fit-content;
+}
+
+.reg_button_arrow {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.reg_features_list {
+  list-style-type: none;
+  margin-top: 20px;
+  list-style-position: inside;
+}
+
+.reg_feature {
+  margin-left: $regFeatureLeftMargin;
+}
+
+.reg_feature:before {
+  content: "\2713";
+  display: inline-block;
+  margin-left: -$regFeatureLeftMargin;
+  width: $regFeatureLeftMargin *2;
+}
+
+.reg_feature_text{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
