@@ -177,7 +177,7 @@ body {
 
   &:hover .basket_menu {
     display: block;
-    min-width: 100px;
+    min-width: 150px;
   }
 
   &:hover .basket_pointer {
@@ -999,6 +999,7 @@ body {
   .reg_container {
     gap: 20px;
   }
+
   .form_container {
     flex-flow: row;
     justify-content: space-between;
@@ -1025,17 +1026,17 @@ body {
     justify-content: center;
   }
 
-  .filter_container details:first-child > summary {
+  .filter_container details:first-child>summary {
     font-size: 0;
   }
 
-  .filter_container details:first-child > summary:after {
+  .filter_container details:first-child>summary:after {
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
   }
 
-  .filter_container details[open]:first-child > summary:after {
+  .filter_container details[open]:first-child>summary:after {
     background: url("./img/filter_pink.svg") no-repeat bottom;
     background-size: 40px 40px;
   }
@@ -1176,10 +1177,12 @@ body {
     font-size: 16px;
     line-height: 19px;
   }
+
   .text__cart_text_bottom {
     font-size: 14px;
     line-height: 17px;
   }
+
   .text__cart_text__button {
     text-transform: capitalize;
     font-size: 12px;
@@ -1272,4 +1275,3 @@ body {
     display: none;
   }
 }
-

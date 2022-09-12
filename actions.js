@@ -25,6 +25,59 @@ function showMenu() {
     x.classList.add("alt_opened");
 }
 
+/******************************** РЕШЕНИЕ 8 ДЗ *****************************************/
+
+const productsContainer = document.getElementById('productContainer');
+const basketCounter = document.getElementById('basketCounter');
+const basket = document.getElementById('basket');
+const products = [];
+
+productsContainer.addEventListener('click', (event) => {
+    const target = event.target
+    if (!target.classList.contains('featured_card_brightness') && !target.classList.contains('button')) {
+        return;
+    }
+
+    toast(event, 'Item added')
+    let count = +basketCounter.textContent;
+    count++
+    basketCounter.textContent = count;
+    const cardElement = target.closest('.featured_card_content');
+    const id = cardElement.querySelector('img').src;
+    const name = cardElement.querySelector('.product_name').textContent;
+    const price = cardElement.querySelector('.price').textContent;
+    const imageUrl = id;
+    const product = new Product(id, name, price, imageUrl);
+    addProduct(product);
+    const arrayToShow = products.map(product => product.getProductMarkup());
+    arrayToShow.push(getTotalPriceMarkup());
+    basket.innerHTML = arrayToShow.join("");
+});
+
+function addProduct(product) {
+    let notExist = true;
+    products.forEach((element) => {
+        if (element.id === product.id) {
+            notExist = false;
+            element.addOneMore();
+        }
+    });
+    if (notExist) {
+        products.push(product);
+    }
+}
+
+function getTotalPriceMarkup() {
+    let totalPrice = 0;
+    products.forEach((element) => {
+        totalPrice += element.sum;
+    });
+    return `
+        <div class="text text__black text__size_14 text__capitalaize">
+        Total price: <span class="text text__pink text__size_16">$${totalPrice}.00</span> </div>
+  `;
+}
+
 function toast(e, message) {
     e.preventDefault()
     var x = document.getElementById("toast");
@@ -36,6 +89,41 @@ function toast(e, message) {
         x.classList.add("toast_box__hidden");
     }, 1500);
 }
+
+class Product {
+    constructor(id, name, price, imageUrl) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.imageUrl = imageUrl;
+        this.count = 0;
+        this.sum = 0;
+        this.addOneMore()
+    }
+
+    addOneMore() {
+        this.count++;
+        const num = +this.price.replace("$", "");
+        this.sum = this.count * num;
+    }
+
+    getProductMarkup() {
+        return `
+    <div class="basket_link" href="#">
+    <img class="basket_image fluid_image" src=${this.imageUrl} alt=${this.name}>
+        <div class="text text__black text__size_12 text__capitalaize">${this.name}</div>
+        <div class="text text__black text__size_12 text__capitalaize">
+        Price: <span class="text text__pink text__size_12">${this.price}</span> </div>
+        <div class="text text__black text__size_12 text__capitalaize">
+        Quantity: <span class="text text__pink text__size_12">${this.count}</span> </div>
+        <div class="text text__black text__size_12 text__capitalaize">${this.name} total: 
+        <span class="text text__pink text__size_12">$${this.sum}.00</span> </div>
+    </div>
+  `;
+    }
+}
+
+/******************************** РЕШЕНИЕ 8 ДЗ *****************************************/
 
 class Carousel {
     constructor(carElem, prev, next) {
@@ -121,3 +209,4 @@ const slider = new Carousel(
     document.querySelector(".carousel_left_button"),
     document.querySelector(".carousel_right_button")
 );
+
