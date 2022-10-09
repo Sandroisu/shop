@@ -1,0 +1,30 @@
+[
+    {
+        "id_product": 1,
+        "img": "./img/featured_top_left.png",
+        "product_name": "Jacket",
+        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
+        "price": 1600
+    },
+    {
+        "id_product": 2,
+        "img": "./img/featured_top_middle.png",
+        "product_name": "Shirt",
+        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
+        "price": 2400
+    },
+    {
+        "id_product": 1,
+        "img": "./img/featured_top_left.png",
+        "product_name": "Jacket",
+        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
+        "price": 1600
+    },
+    {
+        "id_product": 1,
+        "img": "./img/featured_top_left.png",
+        "product_name": "Jacket",
+        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
+        "price": 1600
+    }
+]
