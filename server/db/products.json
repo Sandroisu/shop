@@ -1,30 +1,44 @@
 [
     {
         "id_product": 1,
-        "img": "./img/featured_top_left.png",
+        "imgProduct": "./img/featured_top_left.png",
         "product_name": "Jacket",
         "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
         "price": 1600
     },
     {
         "id_product": 2,
-        "img": "./img/featured_top_middle.png",
+        "imgProduct": "./img/featured_top_middle.png",
         "product_name": "Shirt",
         "product_expl": "Also, the Shirt is made of a super-lightweight blend of cotton and spandex",
         "price": 2400
     },
     {
-        "id_product": 1,
-        "img": "./img/featured_top_left.png",
-        "product_name": "Jacket",
-        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
-        "price": 1600
+        "id_product": 3,
+        "imgProduct": "./img/featured_top_right.png",
+        "product_name": "Shorts",
+        "product_expl": "It includes Kevlar-woven boxer Shorts, similar in style to a pair of biking Shorts",
+        "price": 1200
     },
     {
-        "id_product": 1,
-        "img": "./img/featured_top_left.png",
-        "product_name": "Jacket",
-        "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
-        "price": 1600
+        "id_product": 4,
+        "imgProduct": "./img/featured_bottom_left.png",
+        "product_name": "Pants",
+        "product_expl": "Now, some critics will allege that since I’ve already conceded that two-legged doggy Pants",
+        "price": 2100
+    },
+    {
+        "id_product": 5,
+        "imgProduct": "./img/featured_bottom_middle.png",
+        "product_name": "T-shirt",
+        "product_expl": "But then don't go complaining when everyone else who worked at the T-shirt shop made millions of dollars",
+        "price": 1100
+    },
+    {
+        "id_product": 6,
+        "imgProduct": "./img/featured_bottom_right.png",
+        "product_name": "Blouse",
+        "product_expl": "Yes, the reunited couple headed off to the courthouse together, he in a strange gray suit, she in a patterned Blouse",
+        "price": 3100
     }
 ]

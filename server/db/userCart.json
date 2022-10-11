@@ -1,0 +1,12 @@
+{
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 1,
+            "imgProduct": "./img/featured_top_left.png",
+            "product_name": "Jacket",
+            "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
+            "price": 1600
+        }
+    ]
+}

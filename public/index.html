@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type='text/css'
+            data-noprefix>
+        <title>Alex Shop</title>
+        <script src="sideMenu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="front/ProductComponent.js" defer></script>
+        <script src="front/CartComponent.js" defer></script>
+        <script src="front/main.js" defer></script>
+    </head>
+
+    <body>
+        <div id=app>
+            <header class="full_width full_width__black_background">
+                <nav class="case case__row case__top_menu">
+                    <div class="navigation_icons_container">
+                        <a href="index.html"><img src="./img/top_logo.svg" alt="top logo"></a>
+                        <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
+                    </div>
+                    <div class="navigation_icons_container">
+                        <div onmouseover="showSideMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
+                        <a href="registration.html"><img src="./img/person.svg" alt="person"></a>
+                        <cart ref="cart"></cart>
+                    </div>
+                </nav>
+            </header>
+
+            <nav class="full_width full_width__pink_background">
+                <div class="top_container">
+                    <div class="top_model_man">
+                        <img src="./img/top_model_man.png" class="top_model_man_img" alt="top model man">
+                    </div>
+                    <div class="top_content_container">
+                        <div class="top_content">
+                            <div class="top_content_text">
+                                <h1 class="brand_text">the brand</h1>
+                                <p class="luxury_text">of luxerious <span class="pink_text">fashion</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_content_menu" id="sideMenu">
+                        <div class="close_side_menu">
+                            <img src="./img/close.svg" onclick="hideSideMenu()" alt="close">
+                        </div>
+                        <h2 class="top_content_menu_heading">
+                            menu
+                        </h2>
+                        <ul class="top_content_menu_list">
+                            <li class="top_content_menu_list_element">man
+                                <ul class="top_content_submenu_list">
+                                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="top_content_menu_list_element">woman
+                                <ul class="top_content_submenu_list">
+                                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="top_content_menu_list_element">kids
+                                <ul class="top_content_submenu_list">
+                                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                                    <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="case case__margin_64">
+                <div class="specials_horizontal">
+                    <div class="specials_element">
+                        <div class="specials_inner_element">
+                            <div class="specials_brightness"></div>
+                            <img src="./img/specials_first.png" class="fluid_image " alt="special for women">
+                            <a href="#" class="specials_image_text_container">
+                                <span class="specials_image_text_top">30% off</span>
+                                <span class="pink_text">for women</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="specials_element">
+                        <div class="specials_inner_element">
+                            <div class="specials_brightness"></div>
+                            <img src="./img/specials_second.png" class="fluid_image" alt="special for men">
+                            <a href="#" class="specials_image_text_container">
+                                <span class="specials_image_text_top">hot deal</span>
+                                <span class="pink_text">for men</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="specials_element">
+                        <div class="specials_inner_element">
+                            <div class="specials_brightness"></div>
+                            <img src="./img/specials_third.png" class="fluid_image" alt="special for kids">
+                            <a href="#" class="specials_image_text_container">
+                                <span class="specials_image_text_top">new arrivals</span>
+                                <span class="pink_text">for kids</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials_element">
+                    <div class="specials_inner_element">
+                        <div class="specials_brightness"></div>
+                        <img src="./img/specials_bottom.png" class="specials_bottom_image" alt="special bottom image">
+                        <a href="#" class="specials_image_text_container">
+                            <span class="specials_image_text_top">luxirous & trendy</span>
+                            <span class="pink_text">accesories</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <products ref="products"></products>
+
+            <section class="full_width full_width__black_background full_width__margin_80">
+                <div class="case case__row case__delivery case__padding_100">
+                    <div class="delivery_element">
+                        <img src="./img/delivery.svg" class="fluid_image" alt="Free Delivery">
+                        <span class="delivery_text_top">Free Delivery</span>
+                        <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov tion with extensive models.</article>
+                    </div>
+                    <div class="delivery_element">
+                        <img src="./img/discount.svg" class="fluid_image" alt="Discounts">
+                        <span class="delivery_text_top">Sales & discounts</span>
+                        <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov tion with extensive models.</article>
+                    </div>
+                    <div class="delivery_element">
+                        <img src="./img/quality.svg" class="fluid_image" alt="Quality assurance">
+                        <span class="delivery_text_top">Quality assurance</span>
+                        <article class="delivery_text_bottom">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov tion with extensive models.</article>
+                    </div>
+                </div>
+            </section>
+            <footer class="full_width full_width__black_background">
+                <div class="contacts_main_container">
+                    <div class="contacts_container">
+                        <figure class="contacts_support">
+                            <img src="./img/support_girl.png" class="fluid_image" alt="Support">
+                            <span class="contacts_support_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a
+                                pulvinar purus condimentum“</span>
+                        </figure>
+                        <div class="contacts_subscribe">
+                            <span class="contacts_subscribe_text_top">SUBSCRIBE</span>
+                            <span class="contacts_subscribe_text_bottom">FOR OUR NEWLETTER AND PROMOTION</span>
+                            <div class="contacts_subscribe_form">
+                                <label>
+                                    <input class="contacts_subscribe_form_email" type="email"
+                                        placeholder="Enter Your Email">
+                                </label>
+                                <button class="button button__pink_button button__rounded_button"
+                                    type="submit">Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_rights_and_social">
+                    <span class="footer_rights">&copy; 2021 Brand All Rights Reserved.</span>
+                    <nav class="footer_social">
+                        <a href="#" class="social_logo social_facebook"></a>
+                        <a href="#" class="social_logo social_instagram"></a>
+                        <a href="#" class="social_logo social_pinterest"></a>
+                        <a href="#" class="social_logo social_twitter"></a>
+                    </nav>
+                </div>
+            </footer>
+            <div id="toast" class="toast_box toast_box__hidden">toast</div>
+        </div>
+
+    </body>
+
+
+</html>
