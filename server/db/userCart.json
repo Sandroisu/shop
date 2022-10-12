@@ -7,6 +7,14 @@
             "product_name": "Jacket",
             "product_expl": "An Olympic boxing champion buys a very expensive Jacket",
             "price": 1600
+        },
+        {
+            "quantity": 1,
+            "id_product": 2,
+            "imgProduct": "./img/featured_top_middle.png",
+            "product_name": "Shirt",
+            "product_expl": "Also, the Shirt is made of a super-lightweight blend of cotton and spandex",
+            "price": 2400
         }
     ]
 }

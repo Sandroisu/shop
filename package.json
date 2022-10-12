@@ -1,0 +1,37 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "balanced-match": "^1.0.2",
+    "brace-expansion": "^1.1.11",
+    "concat-map": "^0.0.1",
+    "fs.realpath": "^1.0.0",
+    "glob": "^7.2.3",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.4",
+    "jasmine": "^4.4.0",
+    "jasmine-core": "^4.4.0",
+    "minimatch": "^3.1.2",
+    "once": "^1.4.0",
+    "path-is-absolute": "^1.0.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "wrappy": "^1.0.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandroisu/shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandroisu/shop/issues"
+  },
+  "homepage": "https://github.com/Sandroisu/shop#readme"
+}
